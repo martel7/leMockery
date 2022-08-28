@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            body {
+                width: 500px;
+                background-color: gainsboro;
+            }
+            button {
+                background-color: #000000;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Insert text to mockify:</h2>
+
+        <textarea type="text" id="inputText" name="inputText" rows="6" cols="50" placeholder="Mock me daddy ;)"></textarea><br><br>
+        
+        <button id="mockButton">Mockify</button>
+
+        <h2>Mocked text:</h2>
+        
+        <h3 style="display:none" id="copyConfirm">Text copied to clipboard.</h3>
+
+        <textarea type="text" id="outputText" name="outputText" rows="6" cols="50" placeholder="Oh yeah, I'm so mocked
+Click on me to copy the text and make me even mockier ( ͡o ͜ʖ ͡o)"
+            onclick="copyOutput()"
+        ></textarea><br><br>
+
+        <script src="mock.js"></script>
+    </body>
+</html>

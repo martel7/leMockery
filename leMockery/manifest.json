@@ -1,0 +1,12 @@
+{
+    "name" : "leMockery",
+    "version" : "0.0.0.1",
+    "manifest_version" : 3,
+    "description" : "Mock the living $#*% out of someone with this easy to use extension.",
+    "icons" : {
+        "128" : "icons/icon1.png"
+    },
+    "action" : {
+        "default_popup" : "popup/popup.html"
+    }
+}

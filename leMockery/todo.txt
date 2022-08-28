@@ -1,0 +1,9 @@
+-ubaciti onclick funkciju umesto dugmeta Mockify, na svaki key press da se mockuje
+-ubaciti neko obavestenje da je tekst zapravo kopiran u clipboard +
+-da ne iskace poruka da je kopirano ako je output prazan
+-mockovati samo tekst karaktere
+-dodati i sliku da se kopira uz tekst, nakon teksta
+
+za ubuduce:
+-napraviti sliku sudjerboba i da se tekst ubacuje i na sliku u 
+    realnom vremenu, i da korisnik moze da iskopira/skine sliku ili tekst, ili oba
