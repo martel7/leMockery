@@ -33,11 +33,13 @@ if (isPressed) {
                     finalMock = finalMock + outputText.charAt(i).toLowerCase();
             }
             else
-             finalMock = finalMock + outputText.charAt(i);
+                finalMock = finalMock + outputText.charAt(i);
         }
 
 
         outputTextElement.value = finalMock;
+
+        
   };
 }
 
@@ -46,7 +48,29 @@ document.getElementById("outputText").onclick = function(){
     //copying the text:
     let text = document.getElementById("outputText").value;
     navigator.clipboard.writeText(text);
+    //copyImageToClipboard("leMockery/images/mockingSpongebob.svg");
 
     //giving user the confrimation that he copied the text:
     document.getElementById("copyConfirm").style.display = "inline";
 }
+
+
+async function copyImageToClipboard(img) {
+    const src = "leMockery/images/mockingSpongebob.svg";
+    const imageMimeType = getImageMimeTypeFromUrl(src)
+    const blob = imageMimeType === 'image/svg' 
+      ? await getTextBlobFromUrl(src) 
+      : await getImageBlobFromUrl(src)
+    
+    await navigator.clipboard.write([
+      new ClipboardItem({
+        [blob.type]: blob
+      })
+    ])
+  }
+  
+  async function getTextBlobFromUrl(url) {
+    const response = await fetch(url);
+    const source = await response.text();
+    return new Blob([source], { type: 'text/plain' });
+  };
