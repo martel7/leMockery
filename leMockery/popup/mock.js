@@ -1,6 +1,6 @@
-const isPressed = document.getElementById("mockButton");
+const isPressed = document.getElementById("inputText");
 if (isPressed) {
-    isPressed.onclick = function() {
+    isPressed.onkeydown = function() {
 
         document.getElementById("copyConfirm").style.display = "none";
 
@@ -55,7 +55,7 @@ document.getElementById("outputText").onclick = function(){
 }
 
 
-async function copyImageToClipboard(img) {
+/*async function copyImageToClipboard(img) {
     const src = "leMockery/images/mockingSpongebob.svg";
     const imageMimeType = getImageMimeTypeFromUrl(src)
     const blob = imageMimeType === 'image/svg' 
@@ -73,4 +73,4 @@ async function copyImageToClipboard(img) {
     const response = await fetch(url);
     const source = await response.text();
     return new Blob([source], { type: 'text/plain' });
-  };
+  };*/

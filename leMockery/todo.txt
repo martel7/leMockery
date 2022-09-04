@@ -7,3 +7,4 @@
 za ubuduce:
 -napraviti sliku sudjerboba i da se tekst ubacuje i na sliku u 
     realnom vremenu, i da korisnik moze da iskopira/skine sliku ili tekst, ili oba
+-skenirati input dugme gde koristik pise, napraviti shortcut da kad ga pritisne tekst se sam automatski mockuje i azurira se input polje
