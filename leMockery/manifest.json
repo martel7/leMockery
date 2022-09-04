@@ -1,6 +1,6 @@
 {
     "name" : "leMockery",
-    "version" : "0.0.0.1",
+    "version" : "0.0.0.2",
     "manifest_version" : 3,
     "description" : "Mock the living $#*% out of someone with this easy to use extension.",
     "icons" : {
