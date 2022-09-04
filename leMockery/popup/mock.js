@@ -1,6 +1,7 @@
-const isPressed = document.getElementById("inputText");
-if (isPressed) {
-    isPressed.onkeydown = function() {
+const isTyped = document.getElementById("inputText");
+const isPressed = document.getElementById("mockButton");
+if (isTyped || isPressed) {
+    isTyped.onkeydown = isPressed.onclick = function() {
 
         document.getElementById("copyConfirm").style.display = "none";
 
